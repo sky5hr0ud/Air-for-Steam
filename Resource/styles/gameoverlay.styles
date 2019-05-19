@@ -34,11 +34,15 @@ gameoverlay.styles {
 	}
 
 	styles {
-		//remove minimize button from chat window
-		"ToolWindow FrameMinimizeButton" { render_bg { } }
+		"ToolWindow FrameMinimizeButton" {
+			render_bg { }
+			//remove minimize button from chat window
+		}
 
-		//!! needs to be added here to due to bug with color not updating in overlay
-		friends_chat_text { textcolor=A2ChatFriend }
+		friends_chat_text {
+			textcolor=A2ChatFriend
+			//!! needs to be added here to due to bug with color not updating in overlay
+		}
 
 		CAvatarOverlayImage {
 			render {
